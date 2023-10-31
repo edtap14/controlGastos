@@ -1,9 +1,9 @@
 import {ContentHeader, DataUser} from "../../index.js";
 
-export function Header(){
+export function Header({stateConfig}){
     return (
         <ContentHeader>
-           <DataUser/>
+           <DataUser stateConfig={stateConfig} />
         </ContentHeader>
     )
 }

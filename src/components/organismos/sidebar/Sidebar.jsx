@@ -7,7 +7,7 @@ import {
 } from "../../../index";
 import { NavLink } from "react-router-dom";
 export function Sidebar({ state, setState }) {
-  console.log(state)
+  console.log(state);
   return (
     <Main isOpen={state}>
       <span className="Sidebarbutton" onClick={() => setState(!state)}>
@@ -67,12 +67,12 @@ const Container = styled.div`
   transition: 0.3s ease-in-out;
   overflow-y: auto;
   overflow-x: hidden;
-  &::-webkit-scrollbar{
+  &::-webkit-scrollbar {
     width: 6px;
     border-radius: 10px;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: ${({theme}) => theme.colorScroll};
+    background-color: ${({ theme }) => theme.colorScroll};
     border-radius: 10px;
   }
   &.active {
